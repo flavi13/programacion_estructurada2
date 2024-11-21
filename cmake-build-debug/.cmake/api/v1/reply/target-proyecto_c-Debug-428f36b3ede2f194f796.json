@@ -129,7 +129,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2
+				2,
+				7
 			]
 		}
 	],
@@ -175,6 +176,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "ejercicio_5/funciones_estudiante.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "main.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

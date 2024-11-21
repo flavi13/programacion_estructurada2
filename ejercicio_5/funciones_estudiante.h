@@ -1,12 +1,11 @@
 //
 // Created by Flavia Rivero on 20/11/24.
 //
-
 #ifndef FUNCIONES_ESTUDIANTE_H
 #define FUNCIONES_ESTUDIANTE_H
 
 #include <stdio.h>
-#include "../ejercicio_1/estudiante.h"
+#include "estudiante.h"
 
 // Funciones para imprimir y modificar estructuras
 void imprimirEstudiante(Estudiante est);

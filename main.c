@@ -1,48 +1,110 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "ejercicio_1/estudiante.h"
-#include "ejercicio_2/union_dato.h"
-#include "ejercicio_3/copia_estudiante.h"
-#include "ejercicio_4/alias_estudiante.h"
-#include "ejercicio_5/funciones_estudiante.h"
+#include "main.h"
+
+// Función para validar la entrada de un nombre
+int validarNombre(const char *nombre) {
+    if (strlen(nombre) > 0 && strlen(nombre) < 50) {
+        return 1; // Nombre válido
+    }
+    return 0; // Nombre inválido
+}
+
+// Función para validar la entrada de una edad
+int validarEdad(int edad) {
+    if (edad > 0) {
+        return 1; // Edad válida
+    }
+    return 0; // Edad inválida
+}
+
+// Función para validar la entrada de un promedio
+int validarPromedio(float promedio) {
+    if (promedio >= 0.0 && promedio <= 10.0) {
+        return 1; // Promedio válido
+    }
+    return 0; // Promedio inválido
+}
+
+// Función para limpiar el buffer de entrada
+void limpiarBuffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
+// Función para solicitar y validar el nombre
+void solicitarNombre(char *nombre) {
+    while (1) {
+        printf("Introduce el nombre (máximo 50 caracteres, sin espacios): ");
+        if (scanf("%49s", nombre) == 1 && validarNombre(nombre)) {
+            break;
+        } else {
+            printf("Error: Nombre inválido. Inténtalo de nuevo.\n");
+            limpiarBuffer();
+        }
+    }
+}
+
+// Función para solicitar y validar la edad
+void solicitarEdad(int *edad) {
+    while (1) {
+        printf("Introduce la edad: ");
+        if (scanf("%d", edad) == 1 && validarEdad(*edad)) {
+            break;
+        } else {
+            printf("Error: Edad inválida. Inténtalo de nuevo.\n");
+            limpiarBuffer();
+        }
+    }
+}
+
+// Función para solicitar y validar el promedio
+void solicitarPromedio(float *promedio) {
+    while (1) {
+        printf("Introduce el promedio (0.0 - 10.0): ");
+        if (scanf("%f", promedio) == 1 && validarPromedio(*promedio)) {
+            break;
+        } else {
+            printf("Error: Promedio inválido. Inténtalo de nuevo.\n");
+            limpiarBuffer();
+        }
+    }
+}
 
 int main() {
     // Parte 1: Estructuras
 
     // a. Constitución de una estructura
-    Est estudiante1;
-    strcpy(estudiante1.nombre, "Flavia");
-    estudiante1.edad = 18;
-    estudiante1.promedio = 9.5;
+    Estudiante estudiante1;
+    solicitarNombre(estudiante1.nombre);
+    solicitarEdad(&estudiante1.edad);
+    solicitarPromedio(&estudiante1.promedio);
 
     // b. Instanciación de estructuras
-    Est estudiante2;
-    strcpy(estudiante2.nombre, "Ana");
-    estudiante2.edad = 22;
-    estudiante2.promedio = 9.8;
+    Estudiante estudiante2;
+    solicitarNombre(estudiante2.nombre);
+    solicitarEdad(&estudiante2.edad);
+    solicitarPromedio(&estudiante2.promedio);
 
     // c. Instanciación con el operador malloc
-    Est *estudiante3 = (Est *) malloc(sizeof(Est));
-    strcpy(estudiante3->nombre, "Pedro");
-    estudiante3->edad = 25;
-    estudiante3->promedio = 9.7;
+    Estudiante *estudiante3 = (Estudiante *) malloc(sizeof(Estudiante));
+    solicitarNombre(estudiante3->nombre);
+    solicitarEdad(&estudiante3->edad);
+    solicitarPromedio(&estudiante3->promedio);
 
     // d. Punteros y estructuras
-    Est *punteroEst = &estudiante1;
+    Estudiante *punteroEst = &estudiante1;
     printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", punteroEst->nombre, punteroEst->edad, punteroEst->promedio);
 
     // e. Organización de la programación: Lista de estudiantes
-    Est *cabeza = NULL;
-    agregarEstudiante(&cabeza, "Flavia", 18, 9.5);
-    agregarEstudiante(&cabeza, "Ana", 22, 8.7);
-    agregarEstudiante(&cabeza, "Luis", 19, 7.8);
+    Estudiante *cabeza = NULL;
+    agregarEstudiante(&cabeza, estudiante1.nombre, estudiante1.edad, estudiante1.promedio);
+    agregarEstudiante(&cabeza, estudiante2.nombre, estudiante2.edad, estudiante2.promedio);
+    agregarEstudiante(&cabeza, estudiante3->nombre, estudiante3->edad, estudiante3->promedio);
 
     printf("Lista de estudiantes:\n");
     mostrarEstudiantes(cabeza);
 
-    eliminarEstudiante(&cabeza, "Ana");
-    printf("\nLista de estudiantes después de eliminar a Ana:\n");
+    eliminarEstudiante(&cabeza, estudiante2.nombre);
+    printf("\nLista de estudiantes después de eliminar a %s:\n", estudiante2.nombre);
     mostrarEstudiantes(cabeza);
 
     // Parte 2: Uniones
@@ -60,4 +122,21 @@ int main() {
     Est copiaEstudiante1 = copiarEstudiante(estudiante1);
     printf("\nCopia del estudiante:\n");
     imprimirEstudiante(copiaEstudiante1);
+
+    // Parte 4: Creación de alias de tipos de estructuras (ya se hizo antes con typedef)
+
+    Est estudiante4;
+    strcpy(estudiante4.nombre, "Flavia");
+    estudiante4.edad = 28;
+    estudiante4.promedio = 9.5;
+
+    // Parte 5: Estructuras y funciones
+    imprimirEstudiante(estudiante4); // Pasar por valor
+    modificarEstudiante(&estudiante4); // Pasar por referencia
+    imprimirEstudiante2(&estudiante4); // Pasar por dirección
+
+    // Liberar memoria asignada con malloc
+    free(estudiante3);
+
+    return 0;
 }

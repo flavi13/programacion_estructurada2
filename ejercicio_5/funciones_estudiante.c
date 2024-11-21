@@ -3,6 +3,7 @@
 //
 
 #include "funciones_estudiante.h"
+#include "estudiante.h"
 
 void imprimirEstudiante(Estudiante est) {
     printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", est.nombre, est.edad, est.promedio);
@@ -15,4 +16,3 @@ void modificarEstudiante(Estudiante *est) {
 void imprimirEstudiante2(Estudiante *est) {
     printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", est->nombre, est->edad, est->promedio);
 }
-

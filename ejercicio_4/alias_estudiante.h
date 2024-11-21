@@ -5,7 +5,7 @@
 #ifndef ALIAS_ESTUDIANTE_H
 #define ALIAS_ESTUDIANTE_H
 
-#include "../ejercicio_1/estudiante.h"
+#include "estudiante.h"
 
 // Creación de alias de tipos de estructuras
 typedef Estudiante Est;

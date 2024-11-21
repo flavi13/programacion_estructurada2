@@ -20,4 +20,5 @@ add_executable(proyecto_c
         ejercicio_3/copia_estudiante.c
         ejercicio_4/alias_estudiante.c
         ejercicio_5/funciones_estudiante.c
+        main.h
 )

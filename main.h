@@ -17,10 +17,6 @@ typedef struct Estudiante {
 void agregarEstudiante(Estudiante **cabeza, const char *nombre, int edad, float promedio);
 void mostrarEstudiantes(Estudiante *cabeza);
 void eliminarEstudiante(Estudiante **cabeza, const char *nombre);
-Estudiante copiarEstudiante(Estudiante est);
-void imprimirEstudiante(Estudiante est);
-void modificarEstudiante(Estudiante *est);
-void imprimirEstudiante2(Estudiante *est);
 
 // Declaración de la unión Dato
 union Dato {
@@ -28,5 +24,16 @@ union Dato {
     float f;
     char str[20];
 };
+
+// Función para copiar una estructura Estudiante
+Estudiante copiarEstudiante(Estudiante est);
+
+// Creación de alias de tipos de estructuras
+typedef Estudiante Est;
+
+// Funciones para imprimir y modificar estructuras
+void imprimirEstudiante(Estudiante est);
+void modificarEstudiante(Estudiante *est);
+void imprimirEstudiante2(Estudiante *est);
 
 #endif // MAIN_H
