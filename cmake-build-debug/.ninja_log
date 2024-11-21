@@ -1,6 +1,12 @@
 # ninja log v6
-0	60	1732096391219261263	build.ninja	30756ee5206b6b62
-0	190	1732095895343176254	CMakeFiles/programacion_estructurada2.dir/main.c.o	518ec03a2eea9bc7
-190	315	1732095895532509535	programacion_estructurada2	20473b83ba954ecd
-1	94	1732096394461274174	CMakeFiles/programacion_estructurada2.dir/main.c.o	518ec03a2eea9bc7
-94	208	1732096394554514641	programacion_estructurada2	20473b83ba954ecd
+1	80	1732124910616316055	CMakeFiles/proyecto_c.dir/ejercicio_2/union_dato.c.o	b521df7a4de4be7d
+2	56	1732125083860353659	build.ninja	30756ee5206b6b62
+2	44	1732121576262855163	CMakeFiles/programacion_estructurada2.dir/main.c.o	518ec03a2eea9bc7
+1	95	1732124910615945274	CMakeFiles/proyecto_c.dir/ejercicio_1/estudiante.c.o	66a099e4211fbe3d
+44	73	1732121576305187930	programacion_estructurada2	20473b83ba954ecd
+2	57	1732125083860353659	build.ninja	30756ee5206b6b62
+7	232	1732125418053113076	CMakeFiles/proyecto_c.dir/ejercicio_4/alias_estudiante.c.o	401408e88a7e99f5
+6	193	1732125490441741938	CMakeFiles/proyecto_c.dir/ejercicio_3/copia_estudiante.c.o	5d054f4820c1ae70
+1	164	1732125515709129801	CMakeFiles/proyecto_c.dir/ejercicio_5/funciones_estudiante.c.o	59184c798828f0f
+2	177	1732125650352680073	CMakeFiles/proyecto_c.dir/main.c.o	71e13cee600ba34f
+177	300	1732125650527348872	proyecto_c	127a61e995edde6d

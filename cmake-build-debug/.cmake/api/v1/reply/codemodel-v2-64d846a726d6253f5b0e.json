@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "programacion_estructurada2",
+					"name" : "proyecto_c",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "programacion_estructurada2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-programacion_estructurada2-Debug-01848dab9120abf581b3.json",
-					"name" : "programacion_estructurada2",
+					"id" : "proyecto_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-proyecto_c-Debug-8c878223ee89e93b8781.json",
+					"name" : "proyecto_c",
 					"projectIndex" : 0
 				}
 			]

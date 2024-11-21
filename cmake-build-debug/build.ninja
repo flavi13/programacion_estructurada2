@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: programacion_estructurada2
+# Project: proyecto_c
 # Configurations: Debug
 # =============================================================================
 
@@ -41,36 +41,71 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/flaviarivero/github/programacion_estructurada2/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target programacion_estructurada2
+# Object build statements for EXECUTABLE target proyecto_c
 
 
 #############################################
-# Order-only phony target for programacion_estructurada2
+# Order-only phony target for proyecto_c
 
-build cmake_object_order_depends_target_programacion_estructurada2: phony || .
+build cmake_object_order_depends_target_proyecto_c: phony || .
 
-build CMakeFiles/programacion_estructurada2.dir/main.c.o: C_COMPILER__programacion_estructurada2_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/main.c || cmake_object_order_depends_target_programacion_estructurada2
-  DEP_FILE = CMakeFiles/programacion_estructurada2.dir/main.c.o.d
+build CMakeFiles/proyecto_c.dir/main.c.o: C_COMPILER__proyecto_c_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/main.c || cmake_object_order_depends_target_proyecto_c
+  DEP_FILE = CMakeFiles/proyecto_c.dir/main.c.o.d
   FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/include
-  OBJECT_DIR = CMakeFiles/programacion_estructurada2.dir
-  OBJECT_FILE_DIR = CMakeFiles/programacion_estructurada2.dir
+  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_1 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_2 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_3 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_4 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_5
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/proyecto_c.dir
+
+build CMakeFiles/proyecto_c.dir/ejercicio_1/estudiante.c.o: C_COMPILER__proyecto_c_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/ejercicio_1/estudiante.c || cmake_object_order_depends_target_proyecto_c
+  DEP_FILE = CMakeFiles/proyecto_c.dir/ejercicio_1/estudiante.c.o.d
+  FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_1 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_2 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_3 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_4 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_5
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/proyecto_c.dir/ejercicio_1
+
+build CMakeFiles/proyecto_c.dir/ejercicio_2/union_dato.c.o: C_COMPILER__proyecto_c_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/ejercicio_2/union_dato.c || cmake_object_order_depends_target_proyecto_c
+  DEP_FILE = CMakeFiles/proyecto_c.dir/ejercicio_2/union_dato.c.o.d
+  FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_1 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_2 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_3 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_4 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_5
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/proyecto_c.dir/ejercicio_2
+
+build CMakeFiles/proyecto_c.dir/ejercicio_3/copia_estudiante.c.o: C_COMPILER__proyecto_c_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/ejercicio_3/copia_estudiante.c || cmake_object_order_depends_target_proyecto_c
+  DEP_FILE = CMakeFiles/proyecto_c.dir/ejercicio_3/copia_estudiante.c.o.d
+  FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_1 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_2 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_3 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_4 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_5
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/proyecto_c.dir/ejercicio_3
+
+build CMakeFiles/proyecto_c.dir/ejercicio_4/alias_estudiante.c.o: C_COMPILER__proyecto_c_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/ejercicio_4/alias_estudiante.c || cmake_object_order_depends_target_proyecto_c
+  DEP_FILE = CMakeFiles/proyecto_c.dir/ejercicio_4/alias_estudiante.c.o.d
+  FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_1 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_2 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_3 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_4 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_5
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/proyecto_c.dir/ejercicio_4
+
+build CMakeFiles/proyecto_c.dir/ejercicio_5/funciones_estudiante.c.o: C_COMPILER__proyecto_c_unscanned_Debug /Users/flaviarivero/github/programacion_estructurada2/ejercicio_5/funciones_estudiante.c || cmake_object_order_depends_target_proyecto_c
+  DEP_FILE = CMakeFiles/proyecto_c.dir/ejercicio_5/funciones_estudiante.c.o.d
+  FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_1 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_2 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_3 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_4 -I/Users/flaviarivero/github/programacion_estructurada2/ejercicio_5
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/proyecto_c.dir/ejercicio_5
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target programacion_estructurada2
+# Link build statements for EXECUTABLE target proyecto_c
 
 
 #############################################
-# Link the executable programacion_estructurada2
+# Link the executable proyecto_c
 
-build programacion_estructurada2: C_EXECUTABLE_LINKER__programacion_estructurada2_Debug CMakeFiles/programacion_estructurada2.dir/main.c.o
+build proyecto_c: C_EXECUTABLE_LINKER__proyecto_c_Debug CMakeFiles/proyecto_c.dir/main.c.o CMakeFiles/proyecto_c.dir/ejercicio_1/estudiante.c.o CMakeFiles/proyecto_c.dir/ejercicio_2/union_dato.c.o CMakeFiles/proyecto_c.dir/ejercicio_3/copia_estudiante.c.o CMakeFiles/proyecto_c.dir/ejercicio_4/alias_estudiante.c.o CMakeFiles/proyecto_c.dir/ejercicio_5/funciones_estudiante.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
-  OBJECT_DIR = CMakeFiles/programacion_estructurada2.dir
+  OBJECT_DIR = CMakeFiles/proyecto_c.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = programacion_estructurada2
-  TARGET_PDB = programacion_estructurada2.dbg
+  TARGET_FILE = proyecto_c
+  TARGET_PDB = proyecto_c.dbg
 
 
 #############################################
@@ -106,7 +141,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/flaviarivero/github/programacion_estructurada2/cmake-build-debug
 
-build all: phony programacion_estructurada2
+build all: phony proyecto_c
 
 # =============================================================================
 # Built-in targets
@@ -115,14 +150,14 @@ build all: phony programacion_estructurada2
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/flaviarivero/github/programacion_estructurada2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/flaviarivero/github/programacion_estructurada2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/flaviarivero/github/programacion_estructurada2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Users/flaviarivero/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/flaviarivero/github/programacion_estructurada2/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################
