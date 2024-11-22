@@ -1,14 +1,13 @@
 #include "main.h"
 
-// Función para validar la entrada de un nombre
+
 int validarNombre(const char *nombre) {
     if (strlen(nombre) > 0 && strlen(nombre) < 50) {
-        return 1; // Nombre válido
+        return 1;
     }
-    return 0; // Nombre inválido
+    return 0;
 }
 
-// Función para validar la entrada de una edad
 int validarEdad(int edad) {
     if (edad > 0) {
         return 1; // Edad válida
@@ -16,7 +15,7 @@ int validarEdad(int edad) {
     return 0; // Edad inválida
 }
 
-// Función para validar la entrada de un promedio
+
 int validarPromedio(float promedio) {
     if (promedio >= 0.0 && promedio <= 10.0) {
         return 1; // Promedio válido
@@ -24,16 +23,14 @@ int validarPromedio(float promedio) {
     return 0; // Promedio inválido
 }
 
-// Función para limpiar el buffer de entrada
 void limpiarBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
-// Función para solicitar y validar el nombre
 void solicitarNombre(char *nombre) {
     while (1) {
-        printf("Introduce el nombre (máximo 50 caracteres, sin espacios): ");
+        printf("Introduce el nombre: ");
         if (scanf("%49s", nombre) == 1 && validarNombre(nombre)) {
             break;
         } else {
@@ -130,12 +127,12 @@ int main() {
     estudiante4.edad = 28;
     estudiante4.promedio = 9.5;
 
-    // Parte 5: Estructuras y funciones
-    imprimirEstudiante(estudiante4); // Pasar por valor
-    modificarEstudiante(&estudiante4); // Pasar por referencia
-    imprimirEstudiante2(&estudiante4); // Pasar por dirección
+    printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", estudiante4.nombre, estudiante4.edad, estudiante4.promedio);
 
-    // Liberar memoria asignada con malloc
+    // Parte 5: Estructuras y funciones
+    modificarEstudiante(&estudiante4); // Pasar por referencia
+    imprimirEstudiante(estudiante4); // Pasar por valor
+
     free(estudiante3);
 
     return 0;
